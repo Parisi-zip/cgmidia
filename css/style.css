@@ -319,3 +319,184 @@ p { color: var(--muted); }
     flex-shrink: 0;
   }
 }
+/* =========================================================
+   SOBRESCRITA DE ALTA ESPECIFICIDADE — CARDS DE SITE NO MOBILE
+   Cole no FINAL ABSOLUTO do arquivo css/style.css
+   ========================================================= */
+@media (max-width: 768px) {
+  body .sites-showcase {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 20px;
+    width: 100%;
+  }
+
+  body .sites-showcase .device,
+  body .sites-showcase .desktop-device,
+  body .sites-showcase .phone-device {
+    width: 100% !important;
+    max-width: 340px !important;
+    min-width: 0 !important;
+    height: auto !important;
+    aspect-ratio: auto !important;
+    transform: none !important;
+    box-sizing: border-box !important;
+  }
+
+  body .sites-showcase .phone-device {
+    max-width: 220px !important;
+  }
+
+  body .sites-showcase .browser-bar,
+  body .sites-showcase .desktop-screen,
+  body .sites-showcase .phone-screen,
+  body .sites-showcase .mock-nav,
+  body .sites-showcase .mock-hero,
+  body .sites-showcase .mock-bottom {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  body .sites-showcase .desktop-screen {
+    padding: 14px !important;
+  }
+
+  body .sites-showcase .phone-screen {
+    padding: 14px 12px !important;
+  }
+
+  body .sites-showcase .mock-nav {
+    flex-wrap: wrap;
+    gap: 6px;
+    font-size: 0.68rem;
+  }
+
+  body .sites-showcase h3,
+  body .sites-showcase h4,
+  body .sites-showcase p,
+  body .sites-showcase span {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  body .sites-showcase h3 {
+    font-size: 1.05rem !important;
+    line-height: 1.25 !important;
+  }
+
+  body .sites-showcase p {
+    font-size: 0.78rem !important;
+    line-height: 1.35 !important;
+  }
+
+  body .sites-showcase .mock-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    font-size: 0.7rem;
+  }
+
+  body .showcase-caption {
+    font-size: 0.82rem;
+    line-height: 1.4;
+    padding: 0 8px;
+    text-align: center;
+  }
+}
+/* =========================================================
+   SOBRESCRITA DE ALTA ESPECIFICIDADE — FEED NO MOBILE
+   Cole no FINAL ABSOLUTO do arquivo css/style.css
+   ========================================================= */
+@media (max-width: 768px) {
+  body .portfolio-shell {
+    padding: 20px 12px;
+    overflow: hidden;
+  }
+
+  body .portfolio-stage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    min-height: auto;
+  }
+
+  body .portfolio-content {
+    order: 1;
+    width: 100%;
+    flex: 0 0 100%;
+    padding: 0;
+  }
+
+  body #portfolio-prev {
+    order: 2;
+  }
+
+  body #portfolio-next {
+    order: 3;
+  }
+
+  body .portfolio-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 1.05rem;
+    flex-shrink: 0;
+  }
+
+  body .feed-showcase {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 16px;
+    width: 100%;
+  }
+
+  body .feed-card,
+  body .feed-card.feed-lilac,
+  body .feed-card.feed-plum,
+  body .feed-card.feed-cream {
+    width: 100% !important;
+    max-width: 280px !important;
+    height: auto !important;
+    min-height: 260px;
+    aspect-ratio: auto !important;
+    padding: 18px 16px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 8px;
+    transform: none !important;
+    overflow: visible;
+  }
+
+  body .feed-card > * {
+    position: static !important;
+    margin: 0 !important;
+    max-width: 100%;
+  }
+
+  body .feed-card h3 {
+    font-size: 1.05rem !important;
+    line-height: 1.25 !important;
+    word-break: break-word;
+  }
+
+  body .feed-card p {
+    font-size: 0.82rem !important;
+    line-height: 1.35 !important;
+  }
+
+  body .feed-art-circle,
+  body .feed-portrait,
+  body .feed-product {
+    width: 52px !important;
+    height: 52px !important;
+    flex-shrink: 0;
+  }
+}
