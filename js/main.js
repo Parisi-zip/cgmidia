@@ -3,7 +3,7 @@
   'use strict';
 
   // Configure o telefone com DDI + DDD + número, somente dígitos.
-  const WHATSAPP_NUMBER = '5511999999999';
+  const WHATSAPP_NUMBER = '5511968211709';
 
   document.querySelectorAll('[data-whatsapp]').forEach((link) => {
     const message = link.dataset.whatsapp || 'Olá! Gostaria de falar com a CG Mídia.';
